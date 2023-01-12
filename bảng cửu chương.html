@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let a, b, c;
+    a = "<table border='1' width='300' cellPadding='3' cellSpacing='0'>"
+    b = c;
+    for (b = 0; b <= 10; b++) {
+        a = a + "<tr>";
+        for (c = 0; c <= 10; c++) {
+            a = a + "<td>" + c + "+" + b + "=" + b * c + "</td>";
+        }
+        a = a + "</tr>";
+
+
+    } a = a + "</table>";
+    document.write(a);
+</script>
+</body>
+</html>
