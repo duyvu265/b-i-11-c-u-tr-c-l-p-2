@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<!--bai 1-->
+<!--<script>-->
+<!--  let a;-->
+<!--  for (a=1;a<=100;a++){-->
+<!--    if (a===99){-->
+<!--      alert("hoan thanh");-->
+<!--    }-->
+
+<!--  }-->
+<!--</script>-->
+<!--bai 2-->
+<!--<script>-->
+<!--  a=prompt("nhap a");-->
+<!--  while (a>100){-->
+<!--    alert("giảm nhiệt độ");-->
+<!--  }while (a<20){-->
+<!--    alert("tăng nhiệt độ");-->
+<!--  }-->
+<!--</script>-->
+<!--bai 3 <br>-->
+
+<!--<script>-->
+<!--let a =0;-->
+<!--let b= 1;-->
+<!--let c=0;-->
+<!--for (i=0;i<20;i++){-->
+<!--    c=a+b;-->
+<!--    document.write(c +"<br>");-->
+<!--    a=b;-->
+<!--    b=c;-->
+
+<!--}-->
+<!--</script>-->
+<!--bai 4-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let b = 1;-->
+<!--    let c = 0;-->
+<!--    for (i = 0; i < 20; i++) {-->
+<!--        c = a + b;-->
+<!--        // document.write(c +"<br>");-->
+<!--        a = b;-->
+<!--        b = c;-->
+<!--        if (c % 5 == 0) {-->
+<!--            alert(c)-->
+<!--            break;-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--bai 5 <br>-->
+
+<!--<script>-->
+<!--let a =0;-->
+<!--let b= 1;-->
+<!--let c=0;-->
+<!--let t=1;-->
+<!--for (i=0;i<19;i++){-->
+<!--    c=a+b;-->
+<!--    a=b;-->
+<!--    b=c;-->
+<!--    t+=c-->
+
+<!--} alert(t)-->
+<!--</script>-->
+<!--bai 6-->
+<!--<script>-->
+<!--let a;-->
+<!--let b =0;-->
+<!--let c=0;-->
+<!--for (a=0;b<30;a++){-->
+<!--    if (a%7===0){-->
+<!--        c+=a;-->
+<!--        b++;-->
+<!--        document.write(`so ngto `+ c+ "<br>")-->
+<!--    }-->
+<!--}document.write(c);-->
+<!--</script>-->
+<!--bai 7-->
+<!--<script>-->
+<!--    let a=1;-->
+<!--    for (a=1;a<=100;a++){-->
+<!--        if (a%3===0 &a%5===0){-->
+<!--            document.write(a+"fizz buzz<br>");-->
+<!--        }-->
+<!--         else if (a%3===0){-->
+<!--            document.write(a+ "fizz <br>");-->
+<!--        }else if(a%5===0){-->
+<!--        document.write(a+"buzz<br>");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+bai 8
+<button onclick="ketqua()">bắt đầu</button>
+<script>
+    function ketqua() {
+        let c = 0;
+        let a = +prompt("nhập số dự đoán");
+        let b = Math.floor(Math.random() * 2);
+        for (;c<4; c++){
+        if (a<b){
+            alert("số bạn nhập nhỏ hơn");
+            a = +prompt("nhập số dự đoán");
+        }else if (a>b){
+            alert("số bạn nhập lớn hơn");
+            a = +prompt("nhập số dự đoán");
+        }
+        else{
+            alert("chuẩn cmnr");
+            break;
+        }}
+    }
+</script>
+</body>
+</html>
